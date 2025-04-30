@@ -10,6 +10,8 @@ public class ItemSpawnerPoints : MonoBehaviour
     public GameObject HealingItemPrefab;
     public GameObject speedItemPrefab;
     public GameObject regenerationPowerUpPrefab;
+    public GameObject attackBuffPrefab;
+    public GameObject permamentHealthIncreasePrefab;
 
     // Keeps track of which spawn point has which item
     private Dictionary<int, GameObject> spawnedItems = new Dictionary<int, GameObject>();
@@ -50,8 +52,8 @@ public class ItemSpawnerPoints : MonoBehaviour
 
     private GameObject GetRandomItem()
     {
-        // Choose one of the 3 prefabs at random
-        int randomIndex = Random.Range(0, 3);
+        // Choose one of the 5 prefabs at random
+        int randomIndex = Random.Range(0, 5);
         switch (randomIndex)
         {
             case 0:
@@ -60,6 +62,10 @@ public class ItemSpawnerPoints : MonoBehaviour
                 return speedItemPrefab;
             case 2:
                 return regenerationPowerUpPrefab;
+            case 3:
+                return attackBuffPrefab;
+            case 4:
+                return permamentHealthIncreasePrefab;
             default:
                 return HealingItemPrefab; // Fallback, should not happen
         }
