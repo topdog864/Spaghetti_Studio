@@ -53,7 +53,7 @@ public class ItemSpawnerPoints : MonoBehaviour
     private GameObject GetRandomItem()
     {
         // Choose one of the 5 prefabs at random
-        int randomIndex = Random.Range(0, 4);
+        int randomIndex = Random.Range(0, 5);
         switch (randomIndex)
         {
             case 0:

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8115051421157598577}
   - component: {fileID: -7161587256475921721}
   m_Layer: 0
-  m_Name: permamentAttackIncrease
+  m_Name: premamentHealthIncrease
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
